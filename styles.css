@@ -2,21 +2,23 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
 }
 
 header {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #1b2b38;
-  animation: fadeIn 2s ease-in-out;
+  padding: 60px 20px 30px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .logo {
   width: 120px;
   height: 120px;
-  animation: spin 4s linear infinite;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 h1 {
@@ -27,9 +29,8 @@ h1 {
 nav {
   display: flex;
   justify-content: center;
-  background-color: #13232f;
+  background: rgba(0, 0, 0, 0.6);
   padding: 10px 0;
-  animation: slideIn 1s ease-out;
 }
 
 nav a {
@@ -46,32 +47,16 @@ nav a:hover {
 }
 
 section {
-  max-width: 960px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background-color: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  animation: fadeIn 1.5s ease-in;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #13232f;
+  background: rgba(0, 0, 0, 0.6);
   color: #ccc;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideIn {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
 }
